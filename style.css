@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+  padding:70px 200px;
+  padding-bottom: 0;
+  background-color: #FAFAFA;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+header{
+  display: flex;
+  margin-bottom: 80px;
+}
+
+header h1{
+  width:60%;
+  font-family: PT Serif;
+  font-size: 36px;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+.intro{
+  width:48%;
+  
+}
+
+.intro h3{
+  font-family: Poppins;
+  font-size: 18px;
+}
+.intro p{
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.profile img{
+  float:left;
+  width:200px;
+}
+
+.profile p{
+  /* vertical text */
+  writing-mode: vertical-rl;
+  display: inline;
+  font-family: PT Serif;
+  font-size: 12px;
+}
+
+.profile h4{
+  clear:left;
+  padding-top: 20px;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.profile{
+  display: inline-block;
+  margin:20px;
+}
+
+
+.downward{
+  /* move down a div */
+  transform:translateY(80px)
+}
+
+footer{
+  text-align: center;
+}
+
+footer p{
+  font-family: Poppins;
+  font-size: 14px;
+  color:#333;
+  opacity: 0.7;
+}
+
+footer a{
+  text-decoration: none;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #F12711, #F5AF19);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
