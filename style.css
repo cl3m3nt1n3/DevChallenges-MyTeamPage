@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-body{
-  padding:70px 200px;
-  padding-bottom: 0;
+html{
   background-color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 10px;
 }
 
 .uppercase{
@@ -12,13 +12,17 @@ body{
 
 header{
   display: flex;
-  margin-bottom: 80px;
+  justify-content: space-evenly;
+  
 }
 
 header h1{
-  width:60%;
   font-family: PT Serif;
-  font-size: 36px;
+  font-size: 3.6rem;
+  width:40%;
+  display: flex;
+  justify-content: center;
+  margin:60px;
 }
 
 main{
@@ -26,56 +30,66 @@ main{
 }
 
 .intro{
-  width:48%;
+  width:35%;
+  padding:50px;
+ 
+}
+
+
+.intro h2{
+  font-size: 1.8rem;
+}
+.intro p{
+  font-size: 1.8rem;
+}
+
+/* images */
+
+main{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  padding: 72px 150px;
+  grid-column-gap: 20px;
   
 }
 
-.intro h3{
-  font-family: Poppins;
-  font-size: 18px;
-}
-.intro p{
-  font-family: Poppins;
-  font-size: 18px;
+.profile{
+  width:275px;
+  position: relative;
 }
 
 .profile img{
-  float:left;
-  width:200px;
+  width:238px;
 }
 
-.profile p{
-  /* vertical text */
+.profile:nth-child(3n+2){
+  margin-top: 100px;
+}
+
+.job{
+  position: absolute;
+  right: 0px;
+  top:0;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
   writing-mode: vertical-rl;
-  display: inline;
-  font-family: PT Serif;
-  font-size: 12px;
 }
 
-.profile h4{
-  clear:left;
-  padding-top: 20px;
-  font-family: Poppins;
-  font-size: 18px;
-}
-
-.profile{
-  display: inline-block;
-  margin:20px;
+.profile h3{
+  font-size: 1.8rem;
+  margin:10px 0;
 }
 
 
-.downward{
-  /* move down a div */
-  transform:translateY(80px)
-}
 
 footer{
   text-align: center;
 }
 
 footer p{
-  font-family: Poppins;
   font-size: 14px;
   color:#333;
   opacity: 0.7;
@@ -91,3 +105,4 @@ footer a{
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
 }
+
