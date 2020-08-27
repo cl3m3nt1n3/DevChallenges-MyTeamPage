@@ -4,6 +4,8 @@ html{
   background-color: #FAFAFA;
   font-family: Poppins;
   font-size: 10px;
+  margin:0;
+  padding:0;
 }
 
 .uppercase{
@@ -13,7 +15,6 @@ html{
 header{
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 header h1{
@@ -25,9 +26,6 @@ header h1{
   margin:60px;
 }
 
-main{
-  margin-bottom: 100px;
-}
 
 .intro{
   width:35%;
@@ -51,7 +49,7 @@ main{
   justify-content: center;
   padding: 72px 150px;
   grid-column-gap: 20px;
-  
+  margin-bottom: 100px;
 }
 
 .profile{
@@ -106,3 +104,59 @@ footer a{
   -moz-text-fill-color: transparent;
 }
 
+@media only screen and (max-width:856px){
+  header{
+    flex-direction: column;
+  }
+
+  header h1{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    margin:0;
+    margin:10px 60px;
+  }
+  
+  .intro{
+    width:60%;
+    padding:10px 60px;
+  }
+
+  main{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .profile:nth-child(3n+2){
+    margin-top: 0;
+  }
+
+  .profile:nth-child(even){
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width:582px){
+  header h1{
+    margin:10px;
+  }
+
+  .intro{
+    width:80%;
+    padding:10px 10px;
+
+  }
+
+  .profile{
+    width:140px;
+    position: relative;
+  }
+
+  .profile img{
+    width:110px;
+  }
+
+  main{
+    margin-bottom: 25px;
+  }
+
+}
